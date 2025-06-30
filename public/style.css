@@ -10,13 +10,13 @@
 }
 
 :root {
-  --bg-color: #1e0034;
-  --text-color: #5a5a5a;
-  --nav-bg: #8561ad;
-  --nav-hover: #865eb8;
-  --footer-bg: #1d1d1d;
-  --card-bg: #e5e4e5;
-  --shadow-light: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  --bg-color: #ffe6f0;         /* Background pink muda */
+  --text-color: #5a2a4a;       /* Teks pink keunguan */
+  --nav-bg: #ff80ab;           /* Navigasi pink terang */
+  --nav-hover: #ff4081;        /* Hover pink tua */
+  --footer-bg: #ffb6c1;        /* Footer pink pastel */
+  --card-bg: #fff0f5;          /* Latar kartu pink sangat muda */
+  --shadow-light: 0px 2px 5px rgba(255, 105, 180, 0.2); /* Bayangan pink */
 }
 
 body {
@@ -33,7 +33,7 @@ body {
   max-width: 980px;
   margin: 0 auto;
   padding: 20px;
-  box-shadow: 0 0 1em #eee1e9;
+  box-shadow: 0 0 1em #f8cddc;
 }
 
 /* Header */
@@ -42,7 +42,7 @@ header {
 }
 
 header h1 {
-  color: #bdb37c;
+  color: #d81b60;
 }
 
 /* Navigation */
@@ -54,7 +54,7 @@ nav {
 }
 
 nav a {
-  color: #ffec6e;
+  color: #fff0f5;
   text-decoration: none;
   padding: 12px 18px;
   font-weight: bold;
@@ -127,7 +127,7 @@ footer {
   text-align: center;
   padding: 15px 0;
   background: var(--footer-bg);
-  color: #ba92d7;
+  color: #6a0d41;
 }
 
 /* Table */
@@ -138,7 +138,7 @@ table {
 }
 
 table th, table td {
-  border: 1px solid #180032;
+  border: 1px solid #ffb6c1;
   padding: 12px 15px;
   text-align: left;
 }
@@ -149,19 +149,19 @@ table th {
 }
 
 table tr:nth-child(even) {
-  background: #f2f2f2;
+  background: #ffe6ef;
 }
 
 /* Buttons */
 .btn-read-more, .btn-back {
   display: inline-block;
   padding: 10px 15px;
-  background-color: #20013d;
-  color: rgb(210, 201, 130);
+  background-color: #e91e63;
+  color: #fff;
   text-decoration: none;
   border-radius: 5px;
 }
 
 .btn-read-more:hover, .btn-back:hover {
-  background-color: #2b84ea;
+  background-color: #ad1457;
 }

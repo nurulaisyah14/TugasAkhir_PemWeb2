@@ -15,4 +15,4 @@
     <h3 class="title">Bio:</h3>
     <p>Ignorance brings peace, but wisdom bears weight.</p>
   </div>
-</aside></section><footer><p>&copy; 2025 - tutu.</p></footer></div></body></html>
+</aside></section><footer><p>&copy; 2025 - Nurul Aisyah.</p></footer></div></body></html>

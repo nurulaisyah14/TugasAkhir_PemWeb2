@@ -1,0 +1,1430 @@
+DEBUG - 2025-06-30 05:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 05:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 05:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 05:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 05:07:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 05:07:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 05:07:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 05:07:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 05:07:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 05:07:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 05:08:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 05:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 05:08:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 05:09:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 05:09:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 05:10:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 05:10:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 05:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 05:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 05:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 05:23:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 05:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 05:24:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 05:24:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 05:24:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 05:24:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-30 07:56:21 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tata' in C:\laragon\www\nurul\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\nurul\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tata', 3306, '', 0)
+#1 C:\laragon\www\nurul\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\nurul\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\nurul\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\nurul\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\nurul\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\nurul\app\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\nurul\system\View\Cell.php(307): App\Cells\ArticleLatest->render(NULL)
+#8 C:\laragon\www\nurul\system\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', Array, 'App\\Cells\\Artic...')
+#9 C:\laragon\www\nurul\system\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\Artic...', Array, 0, 'AppCellsArticle...')
+#10 C:\laragon\www\nurul\app\Views\template\footer.php(4): view_cell('App\\Cells\\Artic...', Array)
+#11 C:\laragon\www\nurul\system\View\View.php(224): include('C:\\laragon\\www\\...')
+#12 C:\laragon\www\nurul\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\laragon\www\nurul\system\View\View.php(475): CodeIgniter\View\View->render('template/footer', NULL, true)
+#14 C:\laragon\www\nurul\app\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+#15 C:\laragon\www\nurul\system\View\View.php(224): include('C:\\laragon\\www\\...')
+#16 C:\laragon\www\nurul\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#17 C:\laragon\www\nurul\system\Common.php(1173): CodeIgniter\View\View->render('home', Array, true)
+#18 C:\laragon\www\nurul\app\Controllers\Page.php(7): view('home', Array)
+#19 C:\laragon\www\nurul\system\CodeIgniter.php(933): App\Controllers\Page->home()
+#20 C:\laragon\www\nurul\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+#21 C:\laragon\www\nurul\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#22 C:\laragon\www\nurul\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#23 C:\laragon\www\nurul\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#24 C:\laragon\www\nurul\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#25 C:\laragon\www\nurul\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#26 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tata' in C:\laragon\www\nurul\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\nurul\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\nurul\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\nurul\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\nurul\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\nurul\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\nurul\app\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\nurul\system\View\Cell.php(307): App\Cells\ArticleLatest->render(NULL)
+#7 C:\laragon\www\nurul\system\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', Array, 'App\\Cells\\Artic...')
+#8 C:\laragon\www\nurul\system\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\Artic...', Array, 0, 'AppCellsArticle...')
+#9 C:\laragon\www\nurul\app\Views\template\footer.php(4): view_cell('App\\Cells\\Artic...', Array)
+#10 C:\laragon\www\nurul\system\View\View.php(224): include('C:\\laragon\\www\\...')
+#11 C:\laragon\www\nurul\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#12 C:\laragon\www\nurul\system\View\View.php(475): CodeIgniter\View\View->render('template/footer', NULL, true)
+#13 C:\laragon\www\nurul\app\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+#14 C:\laragon\www\nurul\system\View\View.php(224): include('C:\\laragon\\www\\...')
+#15 C:\laragon\www\nurul\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#16 C:\laragon\www\nurul\system\Common.php(1173): CodeIgniter\View\View->render('home', Array, true)
+#17 C:\laragon\www\nurul\app\Controllers\Page.php(7): view('home', Array)
+#18 C:\laragon\www\nurul\system\CodeIgniter.php(933): App\Controllers\Page->home()
+#19 C:\laragon\www\nurul\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+#20 C:\laragon\www\nurul\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#21 C:\laragon\www\nurul\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#22 C:\laragon\www\nurul\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#23 C:\laragon\www\nurul\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#24 C:\laragon\www\nurul\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#25 {main}
+CRITICAL - 2025-06-30 07:56:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tata'
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\View\Cell.php(307): App\Cells\ArticleLatest->render(null)
+ 7 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', [...], 'App\\Cells\\ArticleLatest')
+ 8 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArticleLatest::render', [...], 0, 'AppCellsArticleLatestrendercd0369f38ecc0b16ce1b3606f36d8a61')
+ 9 APPPATH\Views\template\footer.php(4): view_cell('App\\Cells\\ArticleLatest::render', [...])
+10 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\template\\footer.php')
+11 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('template/footer', null, true)
+13 APPPATH\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+14 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\home.php')
+15 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+16 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+17 APPPATH\Controllers\Page.php(7): view('home', [...])
+18 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+19 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+20 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+21 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+22 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+23 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+24 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+ERROR - 2025-06-30 07:57:50 --> mysqli_sql_exception: Table 'nurul.article' doesn't exist in C:\laragon\www\nurul\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\nurul\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\nurul\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\nurul\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\nurul\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\nurul\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\nurul\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\nurul\app\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\nurul\system\View\Cell.php(307): App\Cells\ArticleLatest->render(NULL)
+#8 C:\laragon\www\nurul\system\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', Array, 'App\\Cells\\Artic...')
+#9 C:\laragon\www\nurul\system\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\Artic...', Array, 0, 'AppCellsArticle...')
+#10 C:\laragon\www\nurul\app\Views\template\footer.php(4): view_cell('App\\Cells\\Artic...', Array)
+#11 C:\laragon\www\nurul\system\View\View.php(224): include('C:\\laragon\\www\\...')
+#12 C:\laragon\www\nurul\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\laragon\www\nurul\system\View\View.php(475): CodeIgniter\View\View->render('template/footer', NULL, true)
+#14 C:\laragon\www\nurul\app\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+#15 C:\laragon\www\nurul\system\View\View.php(224): include('C:\\laragon\\www\\...')
+#16 C:\laragon\www\nurul\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#17 C:\laragon\www\nurul\system\Common.php(1173): CodeIgniter\View\View->render('home', Array, true)
+#18 C:\laragon\www\nurul\app\Controllers\Page.php(7): view('home', Array)
+#19 C:\laragon\www\nurul\system\CodeIgniter.php(933): App\Controllers\Page->home()
+#20 C:\laragon\www\nurul\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+#21 C:\laragon\www\nurul\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#22 C:\laragon\www\nurul\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#23 C:\laragon\www\nurul\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#24 C:\laragon\www\nurul\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#25 C:\laragon\www\nurul\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#26 {main}
+CRITICAL - 2025-06-30 07:57:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'nurul.article' doesn't exist
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\View\Cell.php(307): App\Cells\ArticleLatest->render(null)
+ 6 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', [...], 'App\\Cells\\ArticleLatest')
+ 7 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArticleLatest::render', [...], 0, 'AppCellsArticleLatestrendercd0369f38ecc0b16ce1b3606f36d8a61')
+ 8 APPPATH\Views\template\footer.php(4): view_cell('App\\Cells\\ArticleLatest::render', [...])
+ 9 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\template\\footer.php')
+10 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('template/footer', null, true)
+12 APPPATH\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+13 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\home.php')
+14 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+15 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+16 APPPATH\Controllers\Page.php(7): view('home', [...])
+17 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+18 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+19 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+23 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+CRITICAL - 2025-06-30 07:57:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'nurul.article' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\View\Cell.php(307): App\Cells\ArticleLatest->render(null)
+ 8 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', [...], 'App\\Cells\\ArticleLatest')
+ 9 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArticleLatest::render', [...], 0, 'AppCellsArticleLatestrendercd0369f38ecc0b16ce1b3606f36d8a61')
+10 APPPATH\Views\template\footer.php(4): view_cell('App\\Cells\\ArticleLatest::render', [...])
+11 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\template\\footer.php')
+12 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+13 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('template/footer', null, true)
+14 APPPATH\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+15 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\home.php')
+16 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+17 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+18 APPPATH\Controllers\Page.php(7): view('home', [...])
+19 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+20 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+21 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+24 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+25 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+CRITICAL - 2025-06-30 07:57:50 --> [Caused by] mysqli_sql_exception: Table 'nurul.article' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\View\Cell.php(307): App\Cells\ArticleLatest->render(null)
+ 9 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', [...], 'App\\Cells\\ArticleLatest')
+10 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArticleLatest::render', [...], 0, 'AppCellsArticleLatestrendercd0369f38ecc0b16ce1b3606f36d8a61')
+11 APPPATH\Views\template\footer.php(4): view_cell('App\\Cells\\ArticleLatest::render', [...])
+12 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\template\\footer.php')
+13 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('template/footer', null, true)
+15 APPPATH\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+16 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\home.php')
+17 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+18 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+19 APPPATH\Controllers\Page.php(7): view('home', [...])
+20 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+21 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+22 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+23 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+24 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+25 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+26 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+ERROR - 2025-06-30 08:04:03 --> mysqli_sql_exception: Table 'nurul.article' doesn't exist in C:\laragon\www\nurul\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\nurul\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\nurul\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\nurul\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\nurul\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\nurul\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\nurul\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\nurul\app\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\nurul\system\View\Cell.php(307): App\Cells\ArticleLatest->render(NULL)
+#8 C:\laragon\www\nurul\system\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', Array, 'App\\Cells\\Artic...')
+#9 C:\laragon\www\nurul\system\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\Artic...', Array, 0, 'AppCellsArticle...')
+#10 C:\laragon\www\nurul\app\Views\template\footer.php(4): view_cell('App\\Cells\\Artic...', Array)
+#11 C:\laragon\www\nurul\system\View\View.php(224): include('C:\\laragon\\www\\...')
+#12 C:\laragon\www\nurul\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\laragon\www\nurul\system\View\View.php(475): CodeIgniter\View\View->render('template/footer', NULL, true)
+#14 C:\laragon\www\nurul\app\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+#15 C:\laragon\www\nurul\system\View\View.php(224): include('C:\\laragon\\www\\...')
+#16 C:\laragon\www\nurul\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#17 C:\laragon\www\nurul\system\Common.php(1173): CodeIgniter\View\View->render('home', Array, true)
+#18 C:\laragon\www\nurul\app\Controllers\Page.php(7): view('home', Array)
+#19 C:\laragon\www\nurul\system\CodeIgniter.php(933): App\Controllers\Page->home()
+#20 C:\laragon\www\nurul\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+#21 C:\laragon\www\nurul\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#22 C:\laragon\www\nurul\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#23 C:\laragon\www\nurul\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#24 C:\laragon\www\nurul\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#25 C:\laragon\www\nurul\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#26 {main}
+CRITICAL - 2025-06-30 08:04:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'nurul.article' doesn't exist
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\View\Cell.php(307): App\Cells\ArticleLatest->render(null)
+ 6 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', [...], 'App\\Cells\\ArticleLatest')
+ 7 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArticleLatest::render', [...], 0, 'AppCellsArticleLatestrendercd0369f38ecc0b16ce1b3606f36d8a61')
+ 8 APPPATH\Views\template\footer.php(4): view_cell('App\\Cells\\ArticleLatest::render', [...])
+ 9 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\template\\footer.php')
+10 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('template/footer', null, true)
+12 APPPATH\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+13 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\home.php')
+14 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+15 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+16 APPPATH\Controllers\Page.php(7): view('home', [...])
+17 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+18 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+19 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+23 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+CRITICAL - 2025-06-30 08:04:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'nurul.article' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\View\Cell.php(307): App\Cells\ArticleLatest->render(null)
+ 8 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', [...], 'App\\Cells\\ArticleLatest')
+ 9 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArticleLatest::render', [...], 0, 'AppCellsArticleLatestrendercd0369f38ecc0b16ce1b3606f36d8a61')
+10 APPPATH\Views\template\footer.php(4): view_cell('App\\Cells\\ArticleLatest::render', [...])
+11 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\template\\footer.php')
+12 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+13 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('template/footer', null, true)
+14 APPPATH\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+15 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\home.php')
+16 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+17 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+18 APPPATH\Controllers\Page.php(7): view('home', [...])
+19 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+20 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+21 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+24 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+25 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+CRITICAL - 2025-06-30 08:04:03 --> [Caused by] mysqli_sql_exception: Table 'nurul.article' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\View\Cell.php(307): App\Cells\ArticleLatest->render(null)
+ 9 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', [...], 'App\\Cells\\ArticleLatest')
+10 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArticleLatest::render', [...], 0, 'AppCellsArticleLatestrendercd0369f38ecc0b16ce1b3606f36d8a61')
+11 APPPATH\Views\template\footer.php(4): view_cell('App\\Cells\\ArticleLatest::render', [...])
+12 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\template\\footer.php')
+13 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('template/footer', null, true)
+15 APPPATH\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+16 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\home.php')
+17 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+18 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+19 APPPATH\Controllers\Page.php(7): view('home', [...])
+20 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+21 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+22 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+23 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+24 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+25 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+26 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+ERROR - 2025-06-30 08:06:20 --> mysqli_sql_exception: Table 'nurul.article' doesn't exist in C:\laragon\www\nurul\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\nurul\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\nurul\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\nurul\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\nurul\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\nurul\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\nurul\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\nurul\app\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\nurul\system\View\Cell.php(307): App\Cells\ArticleLatest->render(NULL)
+#8 C:\laragon\www\nurul\system\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', Array, 'App\\Cells\\Artic...')
+#9 C:\laragon\www\nurul\system\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\Artic...', Array, 0, 'AppCellsArticle...')
+#10 C:\laragon\www\nurul\app\Views\template\footer.php(4): view_cell('App\\Cells\\Artic...', Array)
+#11 C:\laragon\www\nurul\system\View\View.php(224): include('C:\\laragon\\www\\...')
+#12 C:\laragon\www\nurul\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\laragon\www\nurul\system\View\View.php(475): CodeIgniter\View\View->render('template/footer', NULL, true)
+#14 C:\laragon\www\nurul\app\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+#15 C:\laragon\www\nurul\system\View\View.php(224): include('C:\\laragon\\www\\...')
+#16 C:\laragon\www\nurul\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#17 C:\laragon\www\nurul\system\Common.php(1173): CodeIgniter\View\View->render('home', Array, true)
+#18 C:\laragon\www\nurul\app\Controllers\Page.php(7): view('home', Array)
+#19 C:\laragon\www\nurul\system\CodeIgniter.php(933): App\Controllers\Page->home()
+#20 C:\laragon\www\nurul\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+#21 C:\laragon\www\nurul\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#22 C:\laragon\www\nurul\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#23 C:\laragon\www\nurul\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#24 C:\laragon\www\nurul\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#25 C:\laragon\www\nurul\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#26 {main}
+CRITICAL - 2025-06-30 08:06:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'nurul.article' doesn't exist
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\View\Cell.php(307): App\Cells\ArticleLatest->render(null)
+ 6 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', [...], 'App\\Cells\\ArticleLatest')
+ 7 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArticleLatest::render', [...], 0, 'AppCellsArticleLatestrendercd0369f38ecc0b16ce1b3606f36d8a61')
+ 8 APPPATH\Views\template\footer.php(4): view_cell('App\\Cells\\ArticleLatest::render', [...])
+ 9 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\template\\footer.php')
+10 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('template/footer', null, true)
+12 APPPATH\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+13 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\home.php')
+14 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+15 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+16 APPPATH\Controllers\Page.php(7): view('home', [...])
+17 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+18 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+19 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+23 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+CRITICAL - 2025-06-30 08:06:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'nurul.article' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\View\Cell.php(307): App\Cells\ArticleLatest->render(null)
+ 8 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', [...], 'App\\Cells\\ArticleLatest')
+ 9 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArticleLatest::render', [...], 0, 'AppCellsArticleLatestrendercd0369f38ecc0b16ce1b3606f36d8a61')
+10 APPPATH\Views\template\footer.php(4): view_cell('App\\Cells\\ArticleLatest::render', [...])
+11 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\template\\footer.php')
+12 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+13 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('template/footer', null, true)
+14 APPPATH\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+15 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\home.php')
+16 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+17 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+18 APPPATH\Controllers\Page.php(7): view('home', [...])
+19 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+20 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+21 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+24 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+25 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+CRITICAL - 2025-06-30 08:06:20 --> [Caused by] mysqli_sql_exception: Table 'nurul.article' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\View\Cell.php(307): App\Cells\ArticleLatest->render(null)
+ 9 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', [...], 'App\\Cells\\ArticleLatest')
+10 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArticleLatest::render', [...], 0, 'AppCellsArticleLatestrendercd0369f38ecc0b16ce1b3606f36d8a61')
+11 APPPATH\Views\template\footer.php(4): view_cell('App\\Cells\\ArticleLatest::render', [...])
+12 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\template\\footer.php')
+13 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('template/footer', null, true)
+15 APPPATH\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+16 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\home.php')
+17 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+18 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+19 APPPATH\Controllers\Page.php(7): view('home', [...])
+20 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+21 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+22 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+23 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+24 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+25 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+26 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+ERROR - 2025-06-30 08:07:17 --> mysqli_sql_exception: Table 'nurul.article' doesn't exist in C:\laragon\www\nurul\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\nurul\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\nurul\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\nurul\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\nurul\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\nurul\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\nurul\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\nurul\app\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\nurul\system\View\Cell.php(307): App\Cells\ArticleLatest->render(NULL)
+#8 C:\laragon\www\nurul\system\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', Array, 'App\\Cells\\Artic...')
+#9 C:\laragon\www\nurul\system\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\Artic...', Array, 0, 'AppCellsArticle...')
+#10 C:\laragon\www\nurul\app\Views\template\footer.php(4): view_cell('App\\Cells\\Artic...', Array)
+#11 C:\laragon\www\nurul\system\View\View.php(224): include('C:\\laragon\\www\\...')
+#12 C:\laragon\www\nurul\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\laragon\www\nurul\system\View\View.php(475): CodeIgniter\View\View->render('template/footer', NULL, true)
+#14 C:\laragon\www\nurul\app\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+#15 C:\laragon\www\nurul\system\View\View.php(224): include('C:\\laragon\\www\\...')
+#16 C:\laragon\www\nurul\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#17 C:\laragon\www\nurul\system\Common.php(1173): CodeIgniter\View\View->render('home', Array, true)
+#18 C:\laragon\www\nurul\app\Controllers\Page.php(7): view('home', Array)
+#19 C:\laragon\www\nurul\system\CodeIgniter.php(933): App\Controllers\Page->home()
+#20 C:\laragon\www\nurul\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+#21 C:\laragon\www\nurul\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#22 C:\laragon\www\nurul\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#23 C:\laragon\www\nurul\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#24 C:\laragon\www\nurul\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#25 C:\laragon\www\nurul\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#26 {main}
+CRITICAL - 2025-06-30 08:07:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'nurul.article' doesn't exist
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\View\Cell.php(307): App\Cells\ArticleLatest->render(null)
+ 6 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', [...], 'App\\Cells\\ArticleLatest')
+ 7 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArticleLatest::render', [...], 0, 'AppCellsArticleLatestrendercd0369f38ecc0b16ce1b3606f36d8a61')
+ 8 APPPATH\Views\template\footer.php(4): view_cell('App\\Cells\\ArticleLatest::render', [...])
+ 9 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\template\\footer.php')
+10 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('template/footer', null, true)
+12 APPPATH\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+13 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\home.php')
+14 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+15 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+16 APPPATH\Controllers\Page.php(7): view('home', [...])
+17 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+18 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+19 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+23 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+CRITICAL - 2025-06-30 08:07:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'nurul.article' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\View\Cell.php(307): App\Cells\ArticleLatest->render(null)
+ 8 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', [...], 'App\\Cells\\ArticleLatest')
+ 9 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArticleLatest::render', [...], 0, 'AppCellsArticleLatestrendercd0369f38ecc0b16ce1b3606f36d8a61')
+10 APPPATH\Views\template\footer.php(4): view_cell('App\\Cells\\ArticleLatest::render', [...])
+11 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\template\\footer.php')
+12 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+13 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('template/footer', null, true)
+14 APPPATH\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+15 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\home.php')
+16 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+17 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+18 APPPATH\Controllers\Page.php(7): view('home', [...])
+19 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+20 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+21 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+24 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+25 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+CRITICAL - 2025-06-30 08:07:17 --> [Caused by] mysqli_sql_exception: Table 'nurul.article' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\View\Cell.php(307): App\Cells\ArticleLatest->render(null)
+ 9 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', [...], 'App\\Cells\\ArticleLatest')
+10 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArticleLatest::render', [...], 0, 'AppCellsArticleLatestrendercd0369f38ecc0b16ce1b3606f36d8a61')
+11 APPPATH\Views\template\footer.php(4): view_cell('App\\Cells\\ArticleLatest::render', [...])
+12 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\template\\footer.php')
+13 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('template/footer', null, true)
+15 APPPATH\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+16 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\home.php')
+17 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+18 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+19 APPPATH\Controllers\Page.php(7): view('home', [...])
+20 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+21 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+22 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+23 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+24 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+25 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+26 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+ERROR - 2025-06-30 08:07:19 --> mysqli_sql_exception: Table 'nurul.article' doesn't exist in C:\laragon\www\nurul\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\nurul\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\nurul\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\nurul\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\nurul\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\nurul\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\nurul\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\nurul\app\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\nurul\system\View\Cell.php(307): App\Cells\ArticleLatest->render(NULL)
+#8 C:\laragon\www\nurul\system\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', Array, 'App\\Cells\\Artic...')
+#9 C:\laragon\www\nurul\system\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\Artic...', Array, 0, 'AppCellsArticle...')
+#10 C:\laragon\www\nurul\app\Views\template\footer.php(4): view_cell('App\\Cells\\Artic...', Array)
+#11 C:\laragon\www\nurul\system\View\View.php(224): include('C:\\laragon\\www\\...')
+#12 C:\laragon\www\nurul\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\laragon\www\nurul\system\View\View.php(475): CodeIgniter\View\View->render('template/footer', NULL, true)
+#14 C:\laragon\www\nurul\app\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+#15 C:\laragon\www\nurul\system\View\View.php(224): include('C:\\laragon\\www\\...')
+#16 C:\laragon\www\nurul\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#17 C:\laragon\www\nurul\system\Common.php(1173): CodeIgniter\View\View->render('home', Array, true)
+#18 C:\laragon\www\nurul\app\Controllers\Page.php(7): view('home', Array)
+#19 C:\laragon\www\nurul\system\CodeIgniter.php(933): App\Controllers\Page->home()
+#20 C:\laragon\www\nurul\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+#21 C:\laragon\www\nurul\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#22 C:\laragon\www\nurul\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#23 C:\laragon\www\nurul\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#24 C:\laragon\www\nurul\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#25 C:\laragon\www\nurul\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#26 {main}
+CRITICAL - 2025-06-30 08:07:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'nurul.article' doesn't exist
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\View\Cell.php(307): App\Cells\ArticleLatest->render(null)
+ 6 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', [...], 'App\\Cells\\ArticleLatest')
+ 7 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArticleLatest::render', [...], 0, 'AppCellsArticleLatestrendercd0369f38ecc0b16ce1b3606f36d8a61')
+ 8 APPPATH\Views\template\footer.php(4): view_cell('App\\Cells\\ArticleLatest::render', [...])
+ 9 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\template\\footer.php')
+10 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('template/footer', null, true)
+12 APPPATH\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+13 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\home.php')
+14 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+15 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+16 APPPATH\Controllers\Page.php(7): view('home', [...])
+17 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+18 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+19 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+23 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+CRITICAL - 2025-06-30 08:07:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'nurul.article' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\View\Cell.php(307): App\Cells\ArticleLatest->render(null)
+ 8 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', [...], 'App\\Cells\\ArticleLatest')
+ 9 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArticleLatest::render', [...], 0, 'AppCellsArticleLatestrendercd0369f38ecc0b16ce1b3606f36d8a61')
+10 APPPATH\Views\template\footer.php(4): view_cell('App\\Cells\\ArticleLatest::render', [...])
+11 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\template\\footer.php')
+12 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+13 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('template/footer', null, true)
+14 APPPATH\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+15 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\home.php')
+16 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+17 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+18 APPPATH\Controllers\Page.php(7): view('home', [...])
+19 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+20 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+21 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+24 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+25 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+CRITICAL - 2025-06-30 08:07:19 --> [Caused by] mysqli_sql_exception: Table 'nurul.article' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\View\Cell.php(307): App\Cells\ArticleLatest->render(null)
+ 9 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', [...], 'App\\Cells\\ArticleLatest')
+10 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArticleLatest::render', [...], 0, 'AppCellsArticleLatestrendercd0369f38ecc0b16ce1b3606f36d8a61')
+11 APPPATH\Views\template\footer.php(4): view_cell('App\\Cells\\ArticleLatest::render', [...])
+12 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\template\\footer.php')
+13 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('template/footer', null, true)
+15 APPPATH\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+16 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\home.php')
+17 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+18 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+19 APPPATH\Controllers\Page.php(7): view('home', [...])
+20 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+21 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+22 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+23 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+24 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+25 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+26 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+ERROR - 2025-06-30 08:09:24 --> mysqli_sql_exception: Table 'nurul.article' doesn't exist in C:\laragon\www\nurul\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\nurul\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\nurul\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\nurul\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\nurul\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\nurul\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\nurul\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\nurul\app\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\nurul\system\View\Cell.php(307): App\Cells\ArticleLatest->render(NULL)
+#8 C:\laragon\www\nurul\system\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', Array, 'App\\Cells\\Artic...')
+#9 C:\laragon\www\nurul\system\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\Artic...', Array, 0, 'AppCellsArticle...')
+#10 C:\laragon\www\nurul\app\Views\template\footer.php(4): view_cell('App\\Cells\\Artic...', Array)
+#11 C:\laragon\www\nurul\system\View\View.php(224): include('C:\\laragon\\www\\...')
+#12 C:\laragon\www\nurul\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\laragon\www\nurul\system\View\View.php(475): CodeIgniter\View\View->render('template/footer', NULL, true)
+#14 C:\laragon\www\nurul\app\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+#15 C:\laragon\www\nurul\system\View\View.php(224): include('C:\\laragon\\www\\...')
+#16 C:\laragon\www\nurul\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#17 C:\laragon\www\nurul\system\Common.php(1173): CodeIgniter\View\View->render('home', Array, true)
+#18 C:\laragon\www\nurul\app\Controllers\Page.php(7): view('home', Array)
+#19 C:\laragon\www\nurul\system\CodeIgniter.php(933): App\Controllers\Page->home()
+#20 C:\laragon\www\nurul\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+#21 C:\laragon\www\nurul\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#22 C:\laragon\www\nurul\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#23 C:\laragon\www\nurul\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#24 C:\laragon\www\nurul\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#25 C:\laragon\www\nurul\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#26 {main}
+CRITICAL - 2025-06-30 08:09:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'nurul.article' doesn't exist
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\View\Cell.php(307): App\Cells\ArticleLatest->render(null)
+ 6 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', [...], 'App\\Cells\\ArticleLatest')
+ 7 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArticleLatest::render', [...], 0, 'AppCellsArticleLatestrendercd0369f38ecc0b16ce1b3606f36d8a61')
+ 8 APPPATH\Views\template\footer.php(4): view_cell('App\\Cells\\ArticleLatest::render', [...])
+ 9 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\template\\footer.php')
+10 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('template/footer', null, true)
+12 APPPATH\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+13 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\home.php')
+14 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+15 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+16 APPPATH\Controllers\Page.php(7): view('home', [...])
+17 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+18 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+19 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+23 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+CRITICAL - 2025-06-30 08:09:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'nurul.article' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\View\Cell.php(307): App\Cells\ArticleLatest->render(null)
+ 8 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', [...], 'App\\Cells\\ArticleLatest')
+ 9 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArticleLatest::render', [...], 0, 'AppCellsArticleLatestrendercd0369f38ecc0b16ce1b3606f36d8a61')
+10 APPPATH\Views\template\footer.php(4): view_cell('App\\Cells\\ArticleLatest::render', [...])
+11 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\template\\footer.php')
+12 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+13 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('template/footer', null, true)
+14 APPPATH\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+15 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\home.php')
+16 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+17 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+18 APPPATH\Controllers\Page.php(7): view('home', [...])
+19 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+20 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+21 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+24 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+25 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+CRITICAL - 2025-06-30 08:09:24 --> [Caused by] mysqli_sql_exception: Table 'nurul.article' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\View\Cell.php(307): App\Cells\ArticleLatest->render(null)
+ 9 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', [...], 'App\\Cells\\ArticleLatest')
+10 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArticleLatest::render', [...], 0, 'AppCellsArticleLatestrendercd0369f38ecc0b16ce1b3606f36d8a61')
+11 APPPATH\Views\template\footer.php(4): view_cell('App\\Cells\\ArticleLatest::render', [...])
+12 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\template\\footer.php')
+13 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('template/footer', null, true)
+15 APPPATH\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+16 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\home.php')
+17 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+18 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+19 APPPATH\Controllers\Page.php(7): view('home', [...])
+20 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+21 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+22 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+23 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+24 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+25 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+26 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+ERROR - 2025-06-30 08:12:11 --> mysqli_sql_exception: Table 'nurul.article' doesn't exist in C:\laragon\www\nurul\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\nurul\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\nurul\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\nurul\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\nurul\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\nurul\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\nurul\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\nurul\app\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\nurul\system\View\Cell.php(307): App\Cells\ArticleLatest->render(NULL)
+#8 C:\laragon\www\nurul\system\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', Array, 'App\\Cells\\Artic...')
+#9 C:\laragon\www\nurul\system\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\Artic...', Array, 0, 'AppCellsArticle...')
+#10 C:\laragon\www\nurul\app\Views\template\footer.php(4): view_cell('App\\Cells\\Artic...', Array)
+#11 C:\laragon\www\nurul\system\View\View.php(224): include('C:\\laragon\\www\\...')
+#12 C:\laragon\www\nurul\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\laragon\www\nurul\system\View\View.php(475): CodeIgniter\View\View->render('template/footer', NULL, true)
+#14 C:\laragon\www\nurul\app\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+#15 C:\laragon\www\nurul\system\View\View.php(224): include('C:\\laragon\\www\\...')
+#16 C:\laragon\www\nurul\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#17 C:\laragon\www\nurul\system\Common.php(1173): CodeIgniter\View\View->render('home', Array, true)
+#18 C:\laragon\www\nurul\app\Controllers\Page.php(7): view('home', Array)
+#19 C:\laragon\www\nurul\system\CodeIgniter.php(933): App\Controllers\Page->home()
+#20 C:\laragon\www\nurul\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+#21 C:\laragon\www\nurul\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#22 C:\laragon\www\nurul\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#23 C:\laragon\www\nurul\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#24 C:\laragon\www\nurul\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#25 C:\laragon\www\nurul\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#26 {main}
+CRITICAL - 2025-06-30 08:12:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'nurul.article' doesn't exist
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\View\Cell.php(307): App\Cells\ArticleLatest->render(null)
+ 6 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', [...], 'App\\Cells\\ArticleLatest')
+ 7 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArticleLatest::render', [...], 0, 'AppCellsArticleLatestrendercd0369f38ecc0b16ce1b3606f36d8a61')
+ 8 APPPATH\Views\template\footer.php(4): view_cell('App\\Cells\\ArticleLatest::render', [...])
+ 9 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\template\\footer.php')
+10 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('template/footer', null, true)
+12 APPPATH\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+13 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\home.php')
+14 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+15 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+16 APPPATH\Controllers\Page.php(7): view('home', [...])
+17 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+18 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+19 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+23 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+CRITICAL - 2025-06-30 08:12:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'nurul.article' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\View\Cell.php(307): App\Cells\ArticleLatest->render(null)
+ 8 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', [...], 'App\\Cells\\ArticleLatest')
+ 9 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArticleLatest::render', [...], 0, 'AppCellsArticleLatestrendercd0369f38ecc0b16ce1b3606f36d8a61')
+10 APPPATH\Views\template\footer.php(4): view_cell('App\\Cells\\ArticleLatest::render', [...])
+11 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\template\\footer.php')
+12 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+13 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('template/footer', null, true)
+14 APPPATH\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+15 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\home.php')
+16 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+17 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+18 APPPATH\Controllers\Page.php(7): view('home', [...])
+19 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+20 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+21 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+24 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+25 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+CRITICAL - 2025-06-30 08:12:11 --> [Caused by] mysqli_sql_exception: Table 'nurul.article' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\View\Cell.php(307): App\Cells\ArticleLatest->render(null)
+ 9 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', [...], 'App\\Cells\\ArticleLatest')
+10 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArticleLatest::render', [...], 0, 'AppCellsArticleLatestrendercd0369f38ecc0b16ce1b3606f36d8a61')
+11 APPPATH\Views\template\footer.php(4): view_cell('App\\Cells\\ArticleLatest::render', [...])
+12 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\template\\footer.php')
+13 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('template/footer', null, true)
+15 APPPATH\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+16 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\home.php')
+17 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+18 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+19 APPPATH\Controllers\Page.php(7): view('home', [...])
+20 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+21 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+22 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+23 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+24 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+25 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+26 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+ERROR - 2025-06-30 08:12:14 --> mysqli_sql_exception: Table 'nurul.article' doesn't exist in C:\laragon\www\nurul\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\nurul\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\nurul\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\nurul\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\nurul\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\nurul\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\nurul\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\nurul\app\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\nurul\system\View\Cell.php(307): App\Cells\ArticleLatest->render(NULL)
+#8 C:\laragon\www\nurul\system\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', Array, 'App\\Cells\\Artic...')
+#9 C:\laragon\www\nurul\system\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\Artic...', Array, 0, 'AppCellsArticle...')
+#10 C:\laragon\www\nurul\app\Views\template\footer.php(4): view_cell('App\\Cells\\Artic...', Array)
+#11 C:\laragon\www\nurul\system\View\View.php(224): include('C:\\laragon\\www\\...')
+#12 C:\laragon\www\nurul\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\laragon\www\nurul\system\View\View.php(475): CodeIgniter\View\View->render('template/footer', NULL, true)
+#14 C:\laragon\www\nurul\app\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+#15 C:\laragon\www\nurul\system\View\View.php(224): include('C:\\laragon\\www\\...')
+#16 C:\laragon\www\nurul\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#17 C:\laragon\www\nurul\system\Common.php(1173): CodeIgniter\View\View->render('home', Array, true)
+#18 C:\laragon\www\nurul\app\Controllers\Page.php(7): view('home', Array)
+#19 C:\laragon\www\nurul\system\CodeIgniter.php(933): App\Controllers\Page->home()
+#20 C:\laragon\www\nurul\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+#21 C:\laragon\www\nurul\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#22 C:\laragon\www\nurul\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#23 C:\laragon\www\nurul\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#24 C:\laragon\www\nurul\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#25 C:\laragon\www\nurul\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#26 {main}
+CRITICAL - 2025-06-30 08:12:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'nurul.article' doesn't exist
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\View\Cell.php(307): App\Cells\ArticleLatest->render(null)
+ 6 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', [...], 'App\\Cells\\ArticleLatest')
+ 7 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArticleLatest::render', [...], 0, 'AppCellsArticleLatestrendercd0369f38ecc0b16ce1b3606f36d8a61')
+ 8 APPPATH\Views\template\footer.php(4): view_cell('App\\Cells\\ArticleLatest::render', [...])
+ 9 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\template\\footer.php')
+10 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('template/footer', null, true)
+12 APPPATH\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+13 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\home.php')
+14 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+15 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+16 APPPATH\Controllers\Page.php(7): view('home', [...])
+17 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+18 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+19 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+23 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+CRITICAL - 2025-06-30 08:12:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'nurul.article' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\View\Cell.php(307): App\Cells\ArticleLatest->render(null)
+ 8 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', [...], 'App\\Cells\\ArticleLatest')
+ 9 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArticleLatest::render', [...], 0, 'AppCellsArticleLatestrendercd0369f38ecc0b16ce1b3606f36d8a61')
+10 APPPATH\Views\template\footer.php(4): view_cell('App\\Cells\\ArticleLatest::render', [...])
+11 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\template\\footer.php')
+12 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+13 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('template/footer', null, true)
+14 APPPATH\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+15 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\home.php')
+16 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+17 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+18 APPPATH\Controllers\Page.php(7): view('home', [...])
+19 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+20 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+21 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+22 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+23 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+24 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+25 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+CRITICAL - 2025-06-30 08:12:14 --> [Caused by] mysqli_sql_exception: Table 'nurul.article' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `article`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Cells\ArticleLatest.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\View\Cell.php(307): App\Cells\ArticleLatest->render(null)
+ 9 SYSTEMPATH\View\Cell.php(104): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\ArticleLatest), 'render', [...], 'App\\Cells\\ArticleLatest')
+10 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArticleLatest::render', [...], 0, 'AppCellsArticleLatestrendercd0369f38ecc0b16ce1b3606f36d8a61')
+11 APPPATH\Views\template\footer.php(4): view_cell('App\\Cells\\ArticleLatest::render', [...])
+12 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\template\\footer.php')
+13 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('template/footer', null, true)
+15 APPPATH\Views\home.php(16): CodeIgniter\View\View->include('template/footer')
+16 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\nurul\\app\\Views\\home.php')
+17 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+18 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+19 APPPATH\Controllers\Page.php(7): view('home', [...])
+20 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->home()
+21 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+22 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+23 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+24 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+25 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+26 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+DEBUG - 2025-06-30 08:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:24:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-30 08:24:52 --> ErrorException: Undefined array key "password"
+[Method: POST, Route: user/login]
+in APPPATH\Controllers\User.php on line 25.
+ 1 APPPATH\Controllers\User.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'C:\\laragon\\www\\nurul\\app\\Controllers\\User.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->login()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+DEBUG - 2025-06-30 08:25:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:26:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-30 08:26:32 --> ErrorException: Undefined array key "password"
+[Method: POST, Route: user/login]
+in APPPATH\Controllers\User.php on line 25.
+ 1 APPPATH\Controllers\User.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'C:\\laragon\\www\\nurul\\app\\Controllers\\User.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->login()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+DEBUG - 2025-06-30 08:26:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:27:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-30 08:27:02 --> ErrorException: Undefined array key "password"
+[Method: POST, Route: user/login]
+in APPPATH\Controllers\User.php on line 25.
+ 1 APPPATH\Controllers\User.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'C:\\laragon\\www\\nurul\\app\\Controllers\\User.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->login()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+DEBUG - 2025-06-30 08:27:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:27:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-30 08:27:53 --> ErrorException: Undefined array key "nurul"
+[Method: POST, Route: user/login]
+in APPPATH\Controllers\User.php on line 25.
+ 1 APPPATH\Controllers\User.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nurul"', 'C:\\laragon\\www\\nurul\\app\\Controllers\\User.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->login()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+DEBUG - 2025-06-30 08:28:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:29:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:29:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:29:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:29:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:29:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-30 08:30:56 --> ErrorException: Undefined array key "password"
+[Method: POST, Route: user/login]
+in APPPATH\Controllers\User.php on line 25.
+ 1 APPPATH\Controllers\User.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'C:\\laragon\\www\\nurul\\app\\Controllers\\User.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->login()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+DEBUG - 2025-06-30 08:33:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:33:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:39:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-30 08:39:18 --> ErrorException: Undefined array key "password"
+[Method: POST, Route: user/login]
+in APPPATH\Controllers\User.php on line 25.
+ 1 APPPATH\Controllers\User.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'C:\\laragon\\www\\nurul\\app\\Controllers\\User.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->login()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+DEBUG - 2025-06-30 08:39:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-30 08:39:41 --> ErrorException: Undefined array key "password"
+[Method: POST, Route: user/login]
+in APPPATH\Controllers\User.php on line 25.
+ 1 APPPATH\Controllers\User.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'C:\\laragon\\www\\nurul\\app\\Controllers\\User.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->login()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+DEBUG - 2025-06-30 08:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-30 08:39:49 --> ErrorException: Undefined array key "password"
+[Method: POST, Route: user/login]
+in APPPATH\Controllers\User.php on line 25.
+ 1 APPPATH\Controllers\User.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'C:\\laragon\\www\\nurul\\app\\Controllers\\User.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->login()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+DEBUG - 2025-06-30 08:40:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:40:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-30 08:40:12 --> ErrorException: Undefined array key "password"
+[Method: POST, Route: user/login]
+in APPPATH\Controllers\User.php on line 25.
+ 1 APPPATH\Controllers\User.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'C:\\laragon\\www\\nurul\\app\\Controllers\\User.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->login()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+DEBUG - 2025-06-30 08:43:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-30 08:43:14 --> ErrorException: Undefined array key "password"
+[Method: POST, Route: user/login]
+in APPPATH\Controllers\User.php on line 30.
+ 1 APPPATH\Controllers\User.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'C:\\laragon\\www\\nurul\\app\\Controllers\\User.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->login()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\nurul\\public\\index.php')
+DEBUG - 2025-06-30 08:44:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:44:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:45:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:45:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:45:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:46:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:46:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:46:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:46:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:47:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:47:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:47:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:47:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:47:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:47:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:48:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:48:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:49:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:49:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:49:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:49:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:49:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:49:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:49:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:49:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:49:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:49:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:49:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:50:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:50:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:50:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:51:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:51:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:51:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:52:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:52:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:52:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:52:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:52:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:52:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:53:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:53:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:53:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:53:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:53:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:54:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:54:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:54:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:54:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:54:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:54:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:55:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:55:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:55:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:57:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:57:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:58:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:58:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:58:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:58:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:58:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-30 08:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -22,7 +22,7 @@ class User extends BaseController
         $model = new UserModel();
         $login = $model->where("username", $username)->first();
         if ($login) {
-            $pass = $login["password"];
+            $pass = $login["userpassword"];
             if ($password === $pass) {
                 $login_data = [
                     "user_id" => $login["id"],
