@@ -3,10 +3,10 @@
 
 | Atribut         | Keterangan            |
 | --------------- | --------------------- |
-| **Nama**        | Oktavia Rizkha Kurniawati         |
-| **NIM**         | 312310509             |
+| **Nama**        | Nurul Aisyah         |
+| **NIM**         | 312310476             |
 | **Kelas**       | TI.23.A.5             |
-| **Mata Kuliah** | Pemrograman Website 2 |
+| **Mata Kuliah** | Pemrograman Web 2 |
 
 # 📌 Tugas Praktikum 7-11
 
