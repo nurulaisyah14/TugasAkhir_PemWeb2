@@ -13,13 +13,13 @@
 # Praktikum 7: Relasi Tabel dan Query Builder
 
 ## Deskripsi
-Praktikum ini merupakan pengembangan dari praktikum sebelumnya. Kali ini, kita akan belajar bagaimana menghubungkan dua tabel di database menggunakan relasi One-to-Many, serta menampilkan data yang saling terkait menggunakan Query Builder di CodeIgniter 4. Praktikum ini dijalankan menggunakan Laragon sebagai local server.
+Praktikum kali ini merupakan lanjutan dari praktikum sebelumnya. Di sini, kita akan mempelajari cara menghubungkan dua tabel dalam database dengan relasi One-to-Many, serta menampilkan data yang saling berelasi menggunakan Query Builder pada CodeIgniter 4. Seluruh proses praktikum dijalankan menggunakan Laragon sebagai server lokal.
 
 ## Tujuan Praktikum
-1. Memahami dasar relasi antar tabel (One-to-Many)
-2. Menghubungkan tabel artikel dan kategori
-3. Menggunakan Query Builder untuk join data antar tabel
-4. Menampilkan data artikel beserta nama kategorinya
+1. Mempelajari konsep dasar relasi antar tabel dengan tipe One-to-Many
+2. Mengimplementasikan relasi antara tabel artikel dan kategori
+3. Memanfaatkan Query Builder untuk menggabungkan data dari dua tabel
+4. Menampilkan daftar artikel lengkap dengan nama kategori masing-masing
 
 ## Langkah-langkah Praktikum
 ### 1. Persiapan Database
@@ -121,11 +121,10 @@ class ArtikelModel extends Model
 
 ### 6. Modifikasi Controller Artikel.php
 
-Memperbarui `Artikel.php` controller untuk:
-
-- Menggunakan method join dari model
-- Menambahkan filter berdasarkan kategori
-- Menangani kategori pada form tambah dan edit artikel
+Memodifikasi `Artikel.php` controller untuk:
+1. Memanfaatkan method join dari model untuk menggabungkan data artikel dengan kategori
+2. Menyediakan fitur filter artikel berdasarkan kategori tertentu
+3. Mengelola data kategori pada tampilan form tambah dan edit artikel
 
 **Kode Controller Artikel.php:**
 
@@ -258,8 +257,7 @@ class Artikel extends BaseController
 
 ### 7. Modifikasi Tampilan (View)
 
-Pada bagian ini, kita akan menyesuaikan tampilan halaman website agar menampilkan data kategori yang telah dikaitkan dengan artikel. Beberapa file view perlu dimodifikasi untuk mendukung fitur relasi One-to-Many ini.
-
+Di bagian ini, tampilan halaman website akan disesuaikan agar dapat menampilkan data kategori yang terhubung dengan setiap artikel. Beberapa file view perlu diperbarui untuk mendukung fitur relasi One-to-Many tersebut.
 ---
 
 #### a. `index.php` (Halaman Depan)
@@ -421,73 +419,5 @@ Menambahkan dropdown kategori dengan nilai yang sudah terpilih sesuai data artik
 ![alt text](Gambar/image-7.png)
 
 
-## 💻 Panduan Awal Menjalankan Web Menggunakan Laragon
+## 💻 Menampilkan Daftar Artikel
 
-### 1. Menyalakan Laragon
-- Buka aplikasi **Laragon**
-- Pastikan **Apache** dan **MySQL** sudah berjalan
-
-### 2. Menempatkan Folder Proyek
-- Salin folder project CodeIgniter 4 ke direktori:
-=======
-# CodeIgniter 4 Framework
-
-## What is CodeIgniter?
-
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
-
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
-
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
-
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
-
-## Important Change with index.php
-
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
-
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
-
-**Please** read the user guide for a better explanation of how CI4 works!
-
-## Repository Management
-
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Contributing
-
-We welcome contributions from the community.
-
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
-
-## Server Requirements
-
-PHP version 8.1 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
->>>>>>> c439f66 (first init)
