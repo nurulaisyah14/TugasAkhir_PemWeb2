@@ -49,7 +49,8 @@ CREATE TABLE kategori (
 ```
 
 **Screenshot:**
-![alt text](Gambar/image.png)
+![image](https://github.com/user-attachments/assets/1e7d01cd-4b8c-4919-93a8-cc3615c55d49)
+
 
 ### 3. Modifikasi Tabel Artikel
 
@@ -65,7 +66,8 @@ FOREIGN KEY (id_kategori) REFERENCES kategori(id_kategori);
 ```
 
 **Screenshot:**
-![alt text](Gambar/image-1.png)
+![image](https://github.com/user-attachments/assets/c5aa7267-80ee-41a4-a9d0-62e75331617b)
+
 
 ### 4. Membuat Model `KategoriModel`
 
