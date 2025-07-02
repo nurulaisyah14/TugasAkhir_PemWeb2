@@ -1,4 +1,7 @@
-<<<<<<< HEAD
+<div align="center">
+Made with ❤️ by Nurul Aisyah
+</div>
+
 ## 👤 Profil Mahasiswa
 
 | Atribut         | Keterangan            |
