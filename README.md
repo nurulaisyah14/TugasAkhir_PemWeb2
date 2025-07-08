@@ -419,4 +419,7 @@ Menambahkan dropdown kategori dengan nilai yang sudah terpilih sesuai data artik
 
 
 ## 💻 Menampilkan Daftar Artikel
+![image](https://github.com/user-attachments/assets/fddfaadd-8509-4d52-9e4b-888175e804bb)
+![image](https://github.com/user-attachments/assets/c4e33182-00cf-4b12-8353-437ab6cadd5f)
+
 
